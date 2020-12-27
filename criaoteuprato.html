@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Cria o teu prato!</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <style>
+      #bordo {
+          border-radius: 25px;
+      }
+  </style>
+    <script src="prato.js"></script>
+  
+</head>
+
+<div style="text-align: center; padding-bottom: 0.2cm; padding-top: 0.2cm; line-height: 0.8cm;">
+  <a href="index.html" class="a a0">Voltar à página inicial</a> 
+  <a href="tudosobreascores.html" class="a a1">Tudo sobre as cores</a>
+  <a href="vermelho.html" class="a a2">Vermelho</a>
+  <a href="laranja.html" class="a a3">Laranja</a>
+  <a href="amarelo.html" class="a a4">Amarelo</a>
+  <a href="verde.html" class="a a5">Verde</a>
+  <a href="roxo.html" class="a a6">Roxo</a>
+  <a href="rosa.html" class="a a7">Rosa</a>
+  <a href="branco.html" class="a a8">Branco</a>
+  <a href="castanho.html" class="a a9">Castanho</a>
+  <a href="imc.html" class="a a10">IMC e Cálculo Calórico</a>
+</div>
+
+<body>
+    <link rel="stylesheet" href="criaoteuprato.css">
+    <header>
+        <h1 style="text-align: center; background-image: url(imagens/fundo.jpg); border-radius: 25px;">Cria o teu prato!</h1>
+    </header>
+    <h2>Aqui poderás idealizar um prato e calcular o valor nutricional da tua refeição!</h2>
+    <p>Os alimentos apresentados são os alimentos mais comuns da dieta portuguesa e os valores nutricionais são aproximados.</p>
+    
+    
+    <form action="">
+        <p>Peso da porção(g):<br><input type="text" id="peso"></p>
+        <p>Valor nutricional(kcal):<br><input type="text" id="vn"></p>
+    </form>
+
+    <p>O valor nutricional do teu prato seria:</p>
+    <p><input type="text" id="soma"></p>
+    <button onclick="soma()" class="button"></button>
+    
+
+    <p>Escolhe o teu alimento!</p>
+
+  <table class="center">
+      <tr>
+        <th>Frutas</th>
+        <th>
+          <button onclick="alimento(52);topo()" class="button">MAÇÃ/PÊRA</button>
+          <button onclick="alimento(18);topo()" class="button">TOMATE</button>
+          <button onclick="alimento(89);topo()" class="button">BANANA</button>
+          <button onclick="alimento(45);topo()" class="button">LARANJA</button>
+          <button onclick="alimento(127);topo()" class="button">DIÓSPIRO</button>
+          <button onclick="alimento(61);topo()" class="button">KIWI</button>
+          <button onclick="alimento(30);topo()" class="button">MELANCIA</button>
+          <button onclick="alimento(68);topo()" class="button">ROMÃ</button>
+          <button onclick="alimento(60);topo()" class="button">MANGA</button>
+          <button onclick="alimento(50);topo()" class="button">ANANÁS</button>
+          <button onclick="alimento(160);topo()" class="button">ABACATE</button>
+        </th>
+      </tr>
+      <tr>
+        <th>Legumes</th>
+        <th>
+          <button onclick="alimento(15);topo()" class="button">ALFACE</button>
+          <button onclick="alimento(41);topo()" class="button">CENOURA</button>
+          <button onclick="alimento(86);topo()" class="button">MILHO</button>
+          <button onclick="alimento(40);topo()" class="button">CEBOLA</button>
+          <button onclick="alimento(42);topo()" class="button">COUVE</button>
+          <button onclick="alimento(16);topo()" class="button">PEPINO</button>
+          <button onclick="alimento(25);topo()" class="button">BERINGELA</button>
+          <button onclick="alimento(43);topo()" class="button">BETERRABA</button>
+          <button onclick="alimento(26);topo()" class="button">PIMENTO</button>
+          <button onclick="alimento(34);topo()" class="button">BRÓCOLOS</button>
+        </th>
+      </tr>
+      <tr>
+        <th>Carnes</th>
+        <th>
+          <button onclick="alimento(195);topo()" class="button">FRANGO</button>
+          <button onclick="alimento(150);topo()" class="button">VACA</button>
+          <button onclick="alimento(189);topo()" class="button">PERÚ</button>
+          <button onclick="alimento(242);topo()" class="button">PORCO</button>
+          <button onclick="alimento(189);topo()" class="button">CABRITO</button>
+          <button onclick="alimento(376);topo()" class="button">LEITÃO</button>
+        </th>
+      </tr>
+      <tr>
+        <th>Peixes, Moluscos e Marisco</th>
+        <th>
+          <button onclick="alimento(130);topo()" class="button">ATUM</button>
+          <button onclick="alimento(171);topo()" class="button">SALMÃO</button>
+          <button onclick="alimento(112);topo()" class="button">PEIXE BRANCO</button>
+          <button onclick="alimento(82);topo()" class="button">BACALHAU</button>
+          <button onclick="alimento(106);topo()" class="button">CAMARÃO</button>
+          <button onclick="alimento(82);topo()" class="button">POLVO</button>
+          <button onclick="alimento(92);topo()" class="button">LULAS</button>
+          <button onclick="alimento(111);topo()" class="button">AMEIJOAS</button>
+        </th>
+      </tr>
+      <tr>
+        <th>Acompanhamentos</th>
+        <th>
+          <button onclick="alimento(130);topo()" class="button">ARROZ</button>
+          <button onclick="alimento(158);topo()" class="button">MASSA</button>
+          <button onclick="alimento(86);topo()" class="button">BATATA</button>
+          <button onclick="alimento(143);topo()" class="button">QUINOA</button>
+          <button onclick="alimento(86);topo()" class="button">BATATA DOCE</button>
+          <button onclick="alimento(540);topo()" class="button">BATATA FRITA</button>
+          <button onclick="alimento(83);topo()" class="button">BULGUR/TRIGUILHO</button>
+        </th>
+      </tr>
+      <tr>
+        <th>Frutos secos</th>
+        <th>
+          <button onclick="alimento(607);topo()" class="button">NOZES</button>
+          <button onclick="alimento(194);topo()" class="button">CASTANHAS</button>
+          <button onclick="alimento(628);topo()" class="button">AVELÃS</button>
+          <button onclick="alimento(578);topo()" class="button">AMÊNDOAS</button>
+          <button onclick="alimento(299);topo()" class="button">PASSAS</button>
+          <button onclick="alimento(194);topo()" class="button">PINHÃO</button>
+          <button onclick="alimento(567);topo()" class="button">AMENDOIM</button>
+          <button onclick="alimento(577);topo()" class="button">CAJU</button>
+          <button onclick="alimento(562);topo()" class="button">PISTACHIO</button>
+        </th>
+      </tr>
+      <tr>
+        <th>Leguminosas</th>
+        <th>
+          <button onclick="alimento(100);topo()" class="button">FEIJÃO</button>
+          <button onclick="alimento(81);topo()" class="button">ERVILHAS</button>
+          <button onclick="alimento(102);topo()" class="button">GRÃO DE BICO</button>
+          <button onclick="alimento(116);topo()" class="button">LENTILHAS</button>
+          <button onclick="alimento(130);topo()" class="button">CHÍCHARO</button>
+        </th>
+      </tr>
+      <tr>
+        <th>Pão</th>
+        <th>
+          <button onclick="alimento(265);topo()" class="button">PÃO BRANCO</button>
+          <button onclick="alimento(265);topo()" class="button">PÃO DE FORMA</button>
+          <button onclick="alimento(250);topo()" class="button">PÃO DE CENTEIO</button>
+          <button onclick="alimento(274);topo()" class="button">BAGUETE</button>
+          <button onclick="alimento(274);topo()" class="button">REGUEIFA</button>
+          <button onclick="alimento(233);topo()" class="button">PÃO DE ÁGUA</button>
+          <button onclick="alimento(254);topo()" class="button">PÃO DE SEMENTES</button>
+          <button onclick="alimento(237);topo()" class="button">PÃO ALENTEJANO</button>
+        </th>
+      </tr>
+      <tr>
+        <th>Pastelaria</th>
+        <th>
+          <button onclick="alimento(406);topo()" class="button">CROISSANT</button>
+          <button onclick="alimento(377);topo()" class="button">QUEQUE</button>
+          <button onclick="alimento(297);topo()" class="button">PASTÉL DE NATA</button>
+          <button onclick="alimento(558);topo()" class="button">PASTÉIS FOLHADOS</button>
+          <button onclick="alimento(495);topo()" class="button">HÚNGAROS</button>
+          <button onclick="alimento(198);topo()" class="button">DONUT SIMPLES</button>
+          <button onclick="alimento(420);topo()" class="button">BOLA DE BERLIM (COM CREME)</button>
+          <button onclick="alimento(262);topo()" class="button">ÉCLAIR</button>
+          <button onclick="alimento(293);topo()" class="button">PÃO DE DEUS</button>
+        </th>>
+      </tr>
+      <tr>
+        <th>Lacticínios, ovos e substitutos</th>
+        <th>
+          <button onclick="alimento(42);topo()" class="button">LEITE</button>
+          <button onclick="alimento(46);topo()" class="button">LEITE DE AVEIA</button>
+          <button onclick="alimento(41);topo()" class="button">LEITE DE AMÊNDOA</button>
+          <button onclick="alimento(55);topo()" class="button">LEITE DE ARROZ</button>
+          <button onclick="alimento(54);topo()" class="button">LEITE DE SOJA</button>
+          <button onclick="alimento(70);topo()" class="button">IOGURTE MEIO GORDO</button>
+          <button onclick="alimento(35);topo()" class="button">IOGURTE MAGRO</button>
+          <button onclick="alimento(58);topo()" class="button">IOGURTE NATURAL</button>
+          <button onclick="alimento(126);topo()" class="button">IOGURTE GREGO</button>
+          <button onclick="alimento(60);topo()" class="button">SKYR</button>
+          <button onclick="alimento(60);topo()" class="button">KVARG</button>
+          <button onclick="alimento(200);topo()" class="button">NATAS</button>
+          <button onclick="alimento(257);topo()" class="button">CHANTILLY</button>
+          <button onclick="alimento(155);topo()" class="button">OVOS</button>
+        </th>>
+      </tr>
+      <tr>
+        <th>Cereais, Snacks e pequenos-almoços</th>
+        <th>
+          <button onclick="alimento(357);topo()" class="button">CORN FLAKES</button>
+          <button onclick="alimento(334);topo()" class="button">ALL BRAN</button>
+          <button onclick="alimento(362);topo()" class="button">WEETABIX</button>
+          <button onclick="alimento(380);topo()" class="button">NESTUM</button>
+          <button onclick="alimento(422);topo()" class="button">CERELAC</button>
+          <button onclick="alimento(370);topo()" class="button">BARRINHAS DE CEREIAS</button>
+          <button onclick="alimento(389);topo()" class="button">CHOCAPIC</button>
+          <button onclick="alimento(399);topo()" class="button">ESTRELITAS</button>
+          <button onclick="alimento(434);topo()" class="button">BOLACHA MARIA</button>
+          <button onclick="alimento(442);topo()" class="button">BOLACHA DE ÁGUA E SAL</button>
+          <button onclick="alimento(502);topo()" class="button">BOLCAHAS DIGESTIVAS</button>
+          <button onclick="alimento(562);topo()" class="button">BOLACHAS DE MANTEIGA</button>
+          <button onclick="alimento(479);topo()" class="button">BOLACHAS DE CHOCOLATE</button>
+        </th>>
+      </tr>
+      <tr>
+        <th>Doces</th>
+        <th>
+          <button onclick="alimento(539);topo()" class="button">NUTELLA</button>
+          <button onclick="alimento(550);topo()" class="button">CHOCOLATE</button>
+          <button onclick="alimento(338);topo()" class="button">BRIGADEIROS</button>
+          <button onclick="alimento(375);topo()" class="button">GOMAS</button>
+          <button onclick="alimento(396);topo()" class="button">BOMBOCAS</button>
+          <button onclick="alimento(572);topo()" class="button">KINDER BUENO</button>
+          <button onclick="alimento(258);topo()" class="button">CREPE SIMPLES</button>
+          <button onclick="alimento(425);topo()" class="button">PETIT GÂTEAU</button>
+          <button onclick="alimento(293);topo()" class="button">SMARTIES</button>
+          <button onclick="alimento(502);topo()" class="button">CARAMELO</button>
+          <button onclick="alimento(500);topo()" class="button">BOLACHAS COM PEPITAS</button>
+          <button onclick="alimento(347);topo()" class="button">TORTAS</button>
+          <button onclick="alimento(266);topo()" class="button">COMPOTAS</button>
+          <button onclick="alimento(304);topo()" class="button">MEL</button>
+        </th>>
+      </tr>
+      <tr>
+        <th>Salgados</th>
+        <th>
+          <button onclick="alimento(717);topo()" class="button">MANTEIGA</button>
+          <button onclick="alimento(208);topo()" class="button">RISSÓIS</button>
+          <button onclick="alimento(285);topo()" class="button">TOSTA MISTA</button>
+          <button onclick="alimento(346);topo()" class="button">SALSICHA</button>
+          <button onclick="alimento(402);topo()" class="button">QUEIJO</button>
+          <button onclick="alimento(91);topo()" class="button">FIAMBRE</button>
+          <button onclick="alimento(161);topo()" class="button">EMPADA DE FRANGO</button>
+          <button onclick="alimento(201);topo()" class="button">BOLINHOS DE BACALHAU</button>
+        </th>
+      </tr>
+
+    </table>
+
+
+</body>
+
+<footer style="text-align: center; padding-bottom: 1cm; padding-top: 1cm; line-height: 1cm;">
+    <a href="index.html" class="a a0">Voltar à página inicial</a> 
+    <a href="tudosobreascores.html" class="a a1">Tudo sobre as cores</a>
+    <a href="vermelho.html" class="a a2">Vermelho</a>
+    <a href="laranja.html" class="a a3">Laranja</a>
+    <a href="amarelo.html" class="a a4">Amarelo</a>
+    <a href="verde.html" class="a a5">Verde</a>
+    <a href="roxo.html" class="a a6">Roxo</a>
+    <a href="rosa.html" class="a a7">Rosa</a>
+    <a href="branco.html" class="a a8">Branco</a>
+    <a href="castanho.html" class="a a9">Castanho</a>
+    <a href="imc.html" class="a a10">IMC e Cálculo Calórico</a>
+  </footer>
+</html>

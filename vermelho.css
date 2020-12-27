@@ -1,0 +1,179 @@
+
+
+body{
+     background-color: rgb(252, 177, 177);
+ }
+
+ th {
+    border-radius: 25px;
+    border-color: rgb(216, 54, 54);
+    border-style: dotted;
+}
+
+.table1{
+   margin-left: auto;
+   margin-right: auto;
+   padding-top: 2cm;
+}
+
+.th1{
+    border: none;
+}
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
+    }
+p { 
+     text-align: center;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;        
+     font-weight: lighter;
+    padding-left: 10px;
+    padding-right: 10px;
+    }
+
+    a:link {
+        background-origin: padding-box;
+        border-radius: 25px;
+        text-align: center;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        margin-left: 1cm;
+        margin-right: 1cm;
+        margin-top: 0.5cm;
+        margin-bottom: 0.5cm;
+    }
+    
+    .a0 {
+        background-color: rgb(255, 235, 205);
+        color: black;
+        border:black
+    }
+    
+    .a0:hover {
+        background-color: rgb(104, 104, 104);
+        color: rgb(255, 255, 255);
+    }
+    
+    .a1 {
+        background-color: rgb(255, 235, 205);
+        color: black;
+        border:black
+    }
+    
+    .a1:hover {
+        background-color: rgb(104, 104, 104);
+        color: rgb(255, 255, 255);
+    }
+    
+    .a2 {
+        background-color:  rgb(255, 235, 205);
+        color: black;
+        border:black
+    }
+    
+    .a2:hover {
+        background-color: rgb(247, 25, 25);
+        color: rgb(255, 255, 255);
+    }
+    .a3 {
+        background-color: rgb(255, 235, 205);
+        color: black;
+        border:black
+    }
+    
+    .a3:hover {
+        background-color: rgb(255, 150, 13);
+        color: rgb(255, 255, 255);
+    }
+    .a4 {
+        background-color:  rgb(255, 235, 205);
+        color: black;
+        border:black
+    }
+    
+    .a4:hover {
+        background-color: rgb(255, 238, 0);
+        color: rgb(255, 255, 255);
+    }
+    .a5 {
+        background-color:  rgb(255, 235, 205);
+        color: black;
+        border:black
+    }
+    
+    .a5:hover {
+        background-color: rgb(63, 155, 51);
+        color: rgb(255, 255, 255);
+    }
+    .a6 {
+        background-color:  rgb(255, 235, 205);
+        color: black;
+        border:black
+    }
+    
+    .a6:hover {
+        background-color: rgb(164, 95, 211);
+        color: rgb(255, 255, 255);
+    }
+    .a7 {
+        background-color: rgb(255, 235, 205);
+        color: black;
+        border:black
+    }
+    
+    .a7:hover {
+        background-color: rgb(233, 130, 199);
+        color: rgb(255, 255, 255);
+    }
+    .a8 {
+        background-color:  rgb(255, 235, 205);
+        color: black;
+        border:black
+    }
+    
+    .a8:hover {
+        background-color: rgba(241, 219, 185, 0.829);
+        color: rgb(255, 255, 255);
+    }
+    .a9 {
+        background-color:  rgb(255, 235, 205);
+        color: black;
+        border:black
+    }
+    
+    .a9:hover {
+        background-color: rgba(133, 89, 32, 0.932);
+        color: rgb(255, 255, 255);
+    }
+    
+    .a10 {
+        background-color:  rgb(255, 235, 205);
+        color: black;
+        border:black
+    }
+    
+    .a10:hover {
+        background-color:rgb(104, 104, 104);
+        color: rgb(255, 255, 255);
+    }
+    
+    .a11 {
+        background-color:  rgb(255, 235, 205);
+        color: black;
+        border:black
+    }
+    
+    .a11:hover {
+        background-color:rgb(104, 104, 104);
+        color: rgb(255, 255, 255);
+    }
+.a12 {
+    font-weight: lighter;
+}
+.a12:hover{
+    background-color: rgb(247, 35, 35);
+}
+.a12:visited {
+    color: rgb(0, 0, 0);
+}

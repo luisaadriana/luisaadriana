@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>IMC e Cálculo Calórico</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+      #bordo {
+          border-radius: 25px
+      }
+  </style>
+</head>
+
+<header>
+  <h1 style="text-align: center; background-image: url(imagens/fundo.jpg); border-radius: 25px;">IMC e Cálculo calórico</h1>
+</header>
+
+<div style="text-align: center; padding-bottom: 0.2cm; padding-top: 0.2cm; line-height: 0.8cm;">
+  <a href="index.html" class="a a0">Voltar à página inicial</a> 
+  <a href="tudosobreascores.html" class="a a1">Tudo sobre as cores</a>
+  <a href="vermelho.html" class="a a2">Vermelho</a>
+  <a href="laranja.html" class="a a3">Laranja</a>
+  <a href="amarelo.html" class="a a4">Amarelo</a>
+  <a href="verde.html" class="a a5">Verde</a>
+  <a href="roxo.html" class="a a6">Roxo</a>
+  <a href="rosa.html" class="a a7">Rosa</a>
+  <a href="branco.html" class="a a8">Branco</a>
+  <a href="castanho.html" class="a a9">Castanho</a>
+  <a href="criaoteuprato.html" class="a a11">Cria o teu prato!</a>
+</div>
+
+<body>
+  <link rel="stylesheet" href="imc.css">
+  <p style="text-indent: 3cm;">IMC é a sigla para Índice de Massa Corporal. É um indicador que avalia se o peso de uma pessoa está adequado à sua altura. Abaixo de 18,5, a pessoa está abaixo do peso, enquanto que acima de 25,0 está acima do peso. O cálculo do IMC simplificado tem apenas em conta o peso e a altura, mas o IMC mais indicado deve ser calculado tendo em conta o sexo, atividade física e idade da pessoa.</p>
+  <h2>Calcula o teu IMC!</h2>
+  <table class="center">
+    <tr>
+        <th></th>
+        <th></th>
+        <th></th>
+    </tr>
+    <tr>
+      <th>
+        <img src="imagens/balanca.svg" id="bordo" width="200">
+      </th>
+      <th>
+        <form action="">
+    <p>Peso:<br><input type="text" id="peso"></p>
+    <p>Altura:<br> <input type="text" id="altura"></p> 
+    <p>IMC:<br> <input type="text" id="imc"></p>
+  </form>
+      </th>
+      <th>
+        <img src="imagens/altura.png" id="bordo" width="200">
+      </th>
+    </tr>
+    <tr>
+      <th></th>
+      <th><button  onclick="imc()">Calcular IMC</button> </th>
+      <th></th>
+    </tr>
+  </table>
+
+  <h2>Tabela geral para o Índice de Massa Corporal</h2>
+
+  <img src="imagens/imc.png" class="center" height="300" style="padding-bottom: 1cm;"> 
+  
+  <table class="table1">
+    <tr>
+      <th style="font-size: xx-large; ">Para aumentar o IMC...</th>
+      <th style="font-size: xx-large;">Para diminuir o IMC...</th>
+    </tr>
+    <tr>
+      <th style="padding-right: 5mm; padding-left: 5mm;">Para aumentar o IMC, uma pessoa deve aumentar a ingestão de alimentos, especialmente ricos em vitaminas e minerais. Não se deve aumentar o IMC pela ingestão dos alimentos populamente conhecidos como "para a engorda", mas sim através do aumento do valor calórico/quantidade de alimento. Em vez de comer 2 colheres de arroz, passa-se a comer 3, e não 2 colheres mais uma fatia de bolo. Embora os açúcares e gorduras sejam importantes para aumentar o peso, a sua ingestão deve ser equilibrada.</th>
+      <th style="padding-right: 5mm; padding-left: 5mm;">Para diminuir o IMC, deve-se diminuir a quantidade de alimentos ingeridos ou o valor calórico destes. Os alimentos industrializados devem ser evitados ao máximo e, tal como para aumentar, devem preferir-se alimentos ricos em vitaminas e minerais. Deve praticar-se exercício físico, de modo a também aumentar o metabolismo. A redução da ingestão deve ser gradual, de modo a tornar o processo mais fácil. Quando o objetivo for atingido, devem manter-se os hábitos, de modo a não ter recaídas. </th>
+    </tr>
+  </table>
+<br>
+
+<div>
+  <h2>A nossa energia é obtida através de 3 principais grupos...</h2>
+  <ul style="padding-left: 3cm; padding-left: 3cm;">
+    <li style="list-style: decimal; font-size: larger; text-align: justify;">Hidratos de carbono
+      <p style="text-align: justify;">A nossa principal fonte de energia. Podem ser encontrados sob a forma de açúcares, amido ou fibras. Deve ser preferida a ingestão de amido e fibras. Os hidratos de carbono simples dão pouca sensação de saciedade e são pobres em vitaminas e minerais. Os complexos são absorvidos e digeridos lentamente, dando maior sensação de saciedade.</p>
+        <p><img src="imagens/pao.jpg" style="width: 4cm;"> </p>
+      <p style="text-align: justify;">Contém 400kcal/100g</p>
+      <form action="">
+        <p style="text-align: center;">Hidratos de carbono (g):    <input type="text" id="hc"></p>
+        <p style="text-align: center;">Kcal:    <input type="text" id="calhc"></p> 
+      </form>
+      <div class="center1">
+      <button onclick="hc()">Calcular Kcal Hidratos de Carbono</button></div>
+    </li><br>
+
+    <li style="list-style: decimal; font-size: larger; text-align: justify;">Lípidos
+      <p style="text-align: justify;">Têm como principal função a reserva de energia, sendo também essenciais para o isolamento térmico. São compostos por ácidos gordos e auxiliam na absorção de vitaminas como A, D, K e E, lipossolúveis. O caroteno é um lípido presente na cenoura e percursor da vitamina A, atuando também como anti-inflamatório. A testosterona, estrogénio e progesterona são lípidos, mas produzidos pelo corpo, assim como o colesterol. Os lípidos que ingerimos podem ser de origem vegetal ou animal.</p>
+        <p><img src="imagens/pao.jpg" style="width: 4cm;"> </p>
+      <p style="text-align: justify;">Contém 800kcal/100g</p>
+      <form action="">
+        <p style="text-align: center;">Lípidos (g):    <input type="text" id="l"></p>
+        <p style="text-align: center;">Kcal:    <input type="text" id="call"></p> 
+      </form>
+      <div class="center1">
+        <button onclick="l()">Calcular Kcal Hidratos de Carbono</button></div>
+    </li><br>
+
+    <li style="list-style: decimal; font-size: larger; text-align: justify;">Proteínas
+      <p style="text-align: justify;">Os alimentos mais ricos em proteínas têm origem animal. Estão associadas aos processos de crescimento, reparo e manutenção muscular, tecidos e órgãos e são tamb+em essenciais para a produção de certas hormonas. Para a população geral, a ingestão diária recomendada é de 0,8g/kg/dia de proteína, enquanto que para atletas varia entre 1,2 e 2g/kg/dia.</p>
+        <p><img src="imagens/pao.jpg" style="width: 4cm;"> </p>
+      <p style="text-align: justify;">Contém 400kcal/100g</p>
+      <form action="">
+        <p style="text-align: center;">Proteínas (g):    <input type="text" id="hc"></p>
+        <p style="text-align: center;">Kcal:    <input type="text" id="calhc"></p> 
+      </form>
+      <div class="center1">
+        <button onclick="p()">Calcular Kcal Hidratos de Carbono</button></div>
+    </li>
+  </ul>
+</div>
+
+<h2>Exercício vs. Atividade física</h2>
+<table>
+  <tr>
+    <th>Atividade física</th>
+    <th>vs.</th>
+    <th>Exercício físico</th>
+  </tr>
+  <tr>
+    <th>Qualquer movimento feito pelos músculos do corpo que tenha como resultado o gasto de energia em valores superiores ao gasto em repouso.</th>
+    <th></th>
+    <th>Atividade que, além do gasto energético, proporciona maior aptidão física e atlética, resultando em maiores índices de saúde.</th>
+  </tr>
+  <tr>
+    <th>Andar/Correr/Dançar/Subir e descer escadas</th>
+    <th></th>
+    <th>Musculação/Futebol/Natação/Artes marciais</th>
+  </tr>
+</table>
+
+<p>Atividade física sistematizada, com um objetivo específico e com uma determinada duração pode ser considerada exercício físico.</p>
+  
+<h1>Importância do exercício físico</h1>
+<ul style="padding-left: 3cm; padding-left: 3cm;">
+  <li style="list-style: decimal; text-align: justify;">Prevenção de doenças</li>
+  <li style="list-style: decimal; text-align: justify;">Controlo da pressão arterial</li>
+  <li style="list-style: decimal; text-align: justify;">Aumento da força muscular</li>
+  <li style="list-style: decimal; text-align: justify;">Melhoria da qualidade do sono</li>
+  <li style="list-style: decimal; text-align: justify;">Controlo do peso</li>
+  <li style="list-style: decimal; text-align: justify;">Melhoria da qualidade da respiração</li>
+  <li style="list-style: decimal; text-align: justify;">Aumento da sensação de felicidade</li>
+  <li style="list-style: decimal; text-align: justify;">Melhoria da flexibilidade</li>
+  <li style="list-style: decimal; text-align: justify;">Promove a socialização</li>
+</ul>
+  <script src="imc.js"></script>
+</body>
+
+<footer style="text-align: center; padding-bottom: 1cm; padding-top: 1cm; line-height: 1cm;">
+  <a href="index.html" class="a a0">Voltar à página inicial</a> 
+  <a href="tudosobreascores.html" class="a a1">Tudo sobre as cores</a>
+  <a href="vermelho.html" class="a a2">Vermelho</a>
+  <a href="laranja.html" class="a a3">Laranja</a>
+  <a href="amarelo.html" class="a a4">Amarelo</a>
+  <a href="verde.html" class="a a5">Verde</a>
+  <a href="roxo.html" class="a a6">Roxo</a>
+  <a href="rosa.html" class="a a7">Rosa</a>
+  <a href="branco.html" class="a a8">Branco</a>
+  <a href="castanho.html" class="a a9">Castanho</a>
+  <a href="criaoteuprato.html" class="a a11">Cria o teu prato!</a>
+</footer>
+</html>
